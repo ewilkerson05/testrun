@@ -1,0 +1,1 @@
+alert("Welcome to 20! This is a competition to see which player gets closer to the number 20. You are going to be playing against the computer. \n You will draw numbers from 1 to 10. The computer will stop at 16. Pay attention to the screen to see what your total is, and if you need another number, press 'y'.");
