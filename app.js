@@ -7,23 +7,22 @@ computertotal = 0;
 do {
   var computernumber = Math.floor(Math.random() * 10) + 1
   computertotal = computertotal + computernumber
-  alert(`Computer drew ${computernumber} \n Computer total is ${computertotal}`)
+  alert(`Computer drew ${computernumber} \n Computer total is ${computertotal}`);
 } while (computertotal < 16)
 
 alert(`Computer will stop at ${computertotal}`)
 
 usertotal = 0;
 
-var usernumber = Math.floor(Math.random() * 10) + 1
+do {
 
-usertotal = usertotal + usernumber
+  var usernumber = Math.floor(Math.random() * 10) + 1
 
-alert(`User drew ${usernumber} \n User total is ${usertotal}`)
+  usertotal = usertotal + usernumber
 
-var userquestion = prompt("Would you like to draw again? Type 'y' for yes. Any other option will stop the draw."); 
+  var userquestion = prompt(`User drew ${usernumber} \n User total is ${usertotal}.\n\n Would you like to draw again? Type 'y' for yes. Any other option will stop the draw.`); 
 
-if (userquestion == "y") {
-  
-}
+} while ((userquestion == "y") && (usertotal < 20))
 
-alert(`User will stop at ${usertotal}`)
+alert(`User will stop at ${usertotal}`);
+
